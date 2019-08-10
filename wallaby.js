@@ -1,7 +1,10 @@
 module.exports = function(w) {
   return {
-    files: [{ pattern: 'src/**/*.spec.ts', ignore: true }, 'src/**/*.ts'],
-
+    files: [
+      { pattern: 'src/**/*.spec.ts', ignore: true },
+      { pattern: 'src/**/constants/*', ignore: true },
+      'src/**/*.ts',
+    ],
     tests: [
       // { pattern: 'src/**/app.spec.ts', ignore: true },
       'src/**/*.spec.ts',
@@ -25,8 +28,11 @@ module.exports = function(w) {
     setup: function(w) {
       const mocha = w.testFramework
 
-      const fs = require('fs');
-      fs.copyFileSync(w.localProjectDir+'/mocha-globals.js', w.projectCacheDir + '/mocha-globals.js');
+      const fs = require('fs')
+      fs.copyFileSync(
+        w.localProjectDir + '/mocha-globals.js',
+        w.projectCacheDir + '/mocha-globals.js'
+      )
       mocha.addFile('mocha-globals.js')
     },
   }
