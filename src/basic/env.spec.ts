@@ -58,4 +58,12 @@ describe('env', () => {
     expect(+process.env.APP_LOADED_AT!).to.be.at.least(nowBefore)
     expect(+process.env.APP_LOADED_AT!).to.be.at.most(nowAfter)
   })
+
+  it('should NOT override env configs', async () => {
+    process.env.APP_LOGLEVEL = LOGLEVELS.DEV_NOTE
+    process.env.APP_ENV = ENVS.DEV
+    require('./env').env
+    expect(process.env.APP_LOGLEVEL).to.be.equals(LOGLEVELS.DEV_NOTE)
+    expect(process.env.APP_ENV).to.be.equals(ENVS.DEV)
+  })
 })

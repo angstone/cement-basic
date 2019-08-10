@@ -1,7 +1,7 @@
 import chalk from 'chalk'
 import { env, ILogger, LOGLEVEL_NUMERIC, LOGLEVELS } from '../'
 
-export const DASH_LINE = `______________________________________________`
+export const DASH_LINE = `_______________________________________________________________________________________________`
 
 /* tslint:disable:no-console */
 const fatal = (...args: any[]) => {
