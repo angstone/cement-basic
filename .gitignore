@@ -1,0 +1,13 @@
+node_modules
+package-lock.json
+dist
+# ignore trash in my machine
+trash
+# timestamp of last build
+.lastDistBuildDate
+.tscache
+# database
+dockers/data
+# nyc dump
+.nyc_output
+coverage

@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "sourceMap": true,
+    "declaration": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "typeRoots": [
+      "node_module/@types",
+      "types"
+    ],
+    "types": [
+      "node",
+      "mocha",
+      "chai",
+      "sinon",
+      "sinon-chai"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "e2eSpecs/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
