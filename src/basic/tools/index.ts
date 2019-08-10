@@ -1,3 +1,4 @@
+import { defaultLogger } from './default-logger'
 import { logger } from './logger'
 
-export { logger }
+export { logger, defaultLogger }

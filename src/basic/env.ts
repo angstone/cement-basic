@@ -11,25 +11,15 @@ process.env.APP_VERSION = '' + app.version
 process.env.APP_LOADED_AT = '' + Date.now()
 
 // Defaults env to prod for security reasons
-if (!process.env.APP_ENV) {
+if (process.env.APP_ENV===( 'undefined'|| undefined )) {
   process.env.APP_ENV = ENVS.PROD
 }
 
 // Defaults loglevel to error
-if (!process.env.APP_LOGLEVEL) {
+if (process.env.APP_LOGLEVEL===( 'undefined'|| undefined )) {
   process.env.APP_LOGLEVEL = LOGLEVELS.ERROR
 }
 
 const env = process.env
-// logger.dash()
-// logger.note(`
-//   APP: ${env.APP_NAME}
-//   Description: ${env.APP_DESCRIPTION}
-//   version: ${env.APP_VERSION}
-//   Author: ${env.APP_AUTHOR}
-//   License: ${env.APP_LICENSE}
-//   loaded at ${env.APP_LOADED_AT}
-// `)
-console.log(`NICE!
-`)
+
 export { env }

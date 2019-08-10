@@ -2,7 +2,6 @@ module.exports = function(w) {
   return {
     files: [
       { pattern: 'src/**/*.spec.ts', ignore: true },
-      { pattern: 'src/**/constants/*', ignore: true },
       'src/**/*.ts',
     ],
     tests: [

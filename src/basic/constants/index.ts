@@ -1,4 +1,4 @@
 import { ENVS } from './envs'
-import { LOGLEVELS } from './loglevels'
+import { LOGLEVEL_NUMERIC, LOGLEVELS } from './loglevels'
 
-export { ENVS, LOGLEVELS }
+export { ENVS, LOGLEVELS, LOGLEVEL_NUMERIC }
