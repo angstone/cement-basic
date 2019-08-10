@@ -18,7 +18,7 @@ if (process.env.APP_ENV === ('undefined' || undefined)) {
 
 // Defaults loglevel to error
 if (process.env.APP_LOGLEVEL === ('undefined' || undefined)) {
-  process.env.APP_LOGLEVEL = LOGLEVELS.ERROR
+  process.env.APP_LOGLEVEL = LOGLEVELS.NOTE
 }
 
 const env = process.env

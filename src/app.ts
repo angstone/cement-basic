@@ -1,3 +1,5 @@
-import { basic } from './'
+import { logger, signature, env } from './basic'
 
-const env = basic.env
+signature()
+logger.note('lets be happy!')
+logger.note(env)

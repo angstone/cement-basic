@@ -6,7 +6,8 @@ import * as clearModule from 'clear-module'
 import { ENVS, LOGLEVELS } from './'
 
 describe('env', () => {
-  beforeEach(() => {
+
+  const clear = () => {
     clearModule('./env')
     process.env.APP_NAME = undefined
     process.env.APP_AUTHOR = undefined
@@ -16,6 +17,14 @@ describe('env', () => {
     process.env.APP_LOADED_AT = undefined
     process.env.APP_ENV = undefined
     process.env.APP_LOGLEVEL = undefined
+  }
+
+  beforeEach(() => {
+    clear()
+  })
+
+  after(() => {
+    clear()
   })
 
   it('should fullfill process.env with values', () => {
@@ -43,7 +52,7 @@ describe('env', () => {
     expect(process.env.APP_LOGLEVEL).to.be.equals('undefined')
     require('./env').env
     expect(process.env.APP_ENV).to.be.equals(ENVS.PROD)
-    expect(process.env.APP_LOGLEVEL).to.be.equals(LOGLEVELS.ERROR)
+    expect(process.env.APP_LOGLEVEL).to.be.equals(LOGLEVELS.NOTE)
   })
 
   it('should register load time', async () => {
