@@ -2,7 +2,7 @@ import { ENVS, LOGLEVEL_NUMERIC, LOGLEVELS } from './constants'
 import { env } from './env'
 import { IError, IHashMap, ILogger } from './interfaces'
 import { signature } from './signature'
-import { logger } from './tools'
+import { defaultError, defaultLogger, error, logger } from './tools'
 
 export {
   // const
@@ -15,6 +15,10 @@ export {
   IError,
   // tools
   logger,
+  defaultLogger,
+  error,
+  defaultError,
+  // basic
   env,
   signature,
 }
