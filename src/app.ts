@@ -1,2 +1,2 @@
-import { signature } from './basic'
+import { signature } from './'
 signature()
