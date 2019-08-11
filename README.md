@@ -1,6 +1,10 @@
 
 # The Cement Basic Module
 
+Angstone Cement Basic Module
+
+Environment constants, a logger and an error handler acting as TypeScript boilerplate
+
 contains:
 - env
 - logger (with chalk)

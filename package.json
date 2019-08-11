@@ -1,7 +1,7 @@
 {
   "name": "@angstone/cement-basic",
   "version": "1.0.0",
-  "description": "Angstone Cement Basic Module",
+  "description": "Environment constants, a logger and an error handler acting as TypeScript boilerplate",
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/app.js",
