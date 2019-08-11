@@ -13,7 +13,7 @@ contains:
 
 # install
 ```
-npm install @cement/basic
+npm install @angstone/cement-basic
 ```
 # use
 ```
@@ -23,7 +23,7 @@ import {
   error,
   ENVS,
   LOGLEVELS
-} from '@cement/basic'
+} from '@angstone/cement-basic'
 
 // Set environment variables
 
