@@ -1,5 +1,5 @@
 import { IError } from '../'
-import { AppError, defaultError } from './default-error'
+import { defaultError } from './default-error'
 
 interface IErrorModule extends IError {
   useError: (error: IError) => void

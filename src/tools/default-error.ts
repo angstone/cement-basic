@@ -1,4 +1,4 @@
-import { env, ENVS, IError } from '../'
+import { IError } from '../'
 import { logger } from './'
 
 export const APP_ERROR: string = 'APP ERROR'
