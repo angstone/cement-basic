@@ -1,5 +1,2 @@
-import { logger, signature, env } from './basic'
-
+import { signature } from './basic'
 signature()
-logger.note('lets be happy!')
-logger.note(env)

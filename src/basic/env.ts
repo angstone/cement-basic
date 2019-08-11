@@ -12,12 +12,12 @@ process.env.APP_VERSION = '' + app.version
 process.env.APP_LOADED_AT = '' + Date.now()
 
 // Defaults env to prod for security reasons
-if (process.env.APP_ENV === ('undefined' || undefined)) {
+if (process.env.APP_ENV === undefined) {
   process.env.APP_ENV = ENVS.PROD
 }
 
 // Defaults loglevel to error
-if (process.env.APP_LOGLEVEL === ('undefined' || undefined)) {
+if (process.env.APP_LOGLEVEL === undefined) {
   process.env.APP_LOGLEVEL = LOGLEVELS.NOTE
 }
 
