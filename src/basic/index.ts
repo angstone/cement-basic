@@ -1,6 +1,6 @@
 import { ENVS, LOGLEVEL_NUMERIC, LOGLEVELS } from './constants'
 import { env } from './env'
-import { IHashMap, ILogger } from './interfaces'
+import { IError, IHashMap, ILogger } from './interfaces'
 import { signature } from './signature'
 import { logger } from './tools'
 
@@ -12,6 +12,7 @@ export {
   // interfaces
   IHashMap,
   ILogger,
+  IError,
   // tools
   logger,
   env,
