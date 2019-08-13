@@ -12,7 +12,7 @@ types
 .nvmrc
 .nycrc.json
 .prettierrc.json
-mocha-global.js
+mocha-globals.js
 nodemon-test.json
 package-lock.json
 tsconfig.json
