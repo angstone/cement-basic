@@ -1,5 +1,14 @@
+<a name="1.0.1"></a>
+## 1.0.1 (2019-08-13)
+
+
+* Added .npmignore to initial release fc10e60
+* changed the signature to include all environment variables. 5359581
+
+
+
 <a name="1.0.0"></a>
-# 1.0.0 (2019-08-13)
+# 1.0.0 (2019-08-10)
 
 
 * exporting more 64e724f
