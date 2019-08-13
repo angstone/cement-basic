@@ -22,7 +22,7 @@
     "error"
   ],
   "author": "ssribeiro",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^0.1.3",
     "@types/chai": "^4.2.0",

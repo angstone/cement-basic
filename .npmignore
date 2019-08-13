@@ -1,0 +1,28 @@
+# nyc dump
+.nyc_output
+coverage
+dist/**/*.spec.js
+dist/**/*.spec.js.map
+dist/**/*.spec.d.ts
+node_modules
+src
+types
+.gitignore
+.mocharc.json
+.nvmrc
+.nycrc.json
+.prettierrc.json
+mocha-global.js
+nodemon-test.json
+package-lock.json
+tsconfig.json
+tslint.json
+wallaby.js
+
+# ignore trash in my machine
+trash
+# timestamp of last build
+.lastDistBuildDate
+.tscache
+# database
+dockers/data
