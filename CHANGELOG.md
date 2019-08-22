@@ -1,3 +1,11 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2019-08-22)
+
+
+* removed chalk from dev log b4e68d8
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2019-08-13)
 
@@ -24,6 +32,3 @@
 * signature + fixes 5c995f2
 * structure change 58ae547
 * test/coverage config 5576e02
-
-
-
