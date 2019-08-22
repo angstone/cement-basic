@@ -25,7 +25,7 @@ const note = (...args: any[]) => {
 const dev = (...args: any[]) => {
   const currentLoglevel: number = LOGLEVEL_NUMERIC[env.APP_LOGLEVEL!]
   if (currentLoglevel >= LOGLEVEL_NUMERIC[LOGLEVELS.DEV_NOTE]) {
-    console.log(chalk.green(...args))
+    console.log(...args)
   }
 }
 

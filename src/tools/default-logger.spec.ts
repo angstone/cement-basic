@@ -46,7 +46,7 @@ describe('defaultLogger', () => {
     process.env.APP_LOGLEVEL = LOGLEVELS.DEV_NOTE
     const consoleLogSpy = spy(console, 'log')
     dlog.dev(stringTest)
-    consoleLogSpy.should.have.been.calledWith(chalk.green(stringTest))
+    consoleLogSpy.should.have.been.calledWith(stringTest)
     consoleLogSpy.restore()
   })
 
