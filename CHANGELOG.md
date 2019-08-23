@@ -1,3 +1,11 @@
+<a name="1.0.3"></a>
+## 1.0.3 (2019-08-23)
+
+
+* automatic stringify non-string logs. Dev logs are green when string 2aa4a6c
+
+
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2019-08-22)
 
