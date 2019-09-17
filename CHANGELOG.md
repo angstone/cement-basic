@@ -1,3 +1,11 @@
+<a name="1.0.4"></a>
+## 1.0.4 (2019-09-17)
+
+
+* add function getErrorHandler 2c35bc7
+
+
+
 <a name="1.0.3"></a>
 ## 1.0.3 (2019-08-23)
 
