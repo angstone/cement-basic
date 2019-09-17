@@ -3,6 +3,7 @@ import { env } from './env'
 import { IError, IHashMap, ILogger } from './interfaces'
 import { signature } from './signature'
 import { defaultError, defaultLogger, error, logger } from './tools'
+import { AppError } from './tools/default-error'
 
 export {
   // const
@@ -13,6 +14,8 @@ export {
   IHashMap,
   ILogger,
   IError,
+  // classes
+  AppError,
   // tools
   logger,
   defaultLogger,
