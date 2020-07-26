@@ -1,5 +1,5 @@
-import chalk from 'chalk'
-import { env, ILogger, LOGLEVEL_NUMERIC, LOGLEVELS } from '../'
+import * as chalk from 'chalk'
+import { env, ILogger, LOGLEVELS, LOGLEVEL_NUMERIC } from '../'
 
 export const DASH_LINE = `_______________________________________________________________________________________________`
 
@@ -7,7 +7,7 @@ export const DASH_LINE = `______________________________________________________
 const fatal = (...args: any[]) => {
   const chalkedArgs: any[] = []
   args.forEach((arg: any) => {
-    if(typeof arg === 'string') {
+    if (typeof arg === 'string') {
       chalkedArgs.push(chalk.red(arg))
     } else {
       chalkedArgs.push(chalk.red(JSON.stringify(arg)))
@@ -21,7 +21,7 @@ const error = (...args: any[]) => {
   if (currentLoglevel >= LOGLEVEL_NUMERIC[LOGLEVELS.ERROR]) {
     const chalkedArgs: any[] = []
     args.forEach((arg: any) => {
-      if(typeof arg === 'string') {
+      if (typeof arg === 'string') {
         chalkedArgs.push(chalk.yellow(arg))
       } else {
         chalkedArgs.push(chalk.yellow(JSON.stringify(arg)))
@@ -36,7 +36,7 @@ const note = (...args: any[]) => {
   if (currentLoglevel >= LOGLEVEL_NUMERIC[LOGLEVELS.NOTE]) {
     const chalkedArgs: any[] = []
     args.forEach((arg: any) => {
-      if(typeof arg === 'string') {
+      if (typeof arg === 'string') {
         chalkedArgs.push(chalk.blue(arg))
       } else {
         chalkedArgs.push(chalk.blue(JSON.stringify(arg)))
@@ -51,7 +51,7 @@ const dev = (...args: any[]) => {
   if (currentLoglevel >= LOGLEVEL_NUMERIC[LOGLEVELS.DEV_NOTE]) {
     const chalkedArgs: any[] = []
     args.forEach((arg: any) => {
-      if(typeof arg === 'string') {
+      if (typeof arg === 'string') {
         chalkedArgs.push(chalk.green(arg))
       } else {
         chalkedArgs.push(arg)

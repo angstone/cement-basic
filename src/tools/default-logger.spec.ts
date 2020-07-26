@@ -3,7 +3,7 @@
 import { expect } from 'chai'
 import { spy } from 'sinon'
 
-import chalk from 'chalk'
+import * as chalk from 'chalk'
 import { LOGLEVELS } from '../'
 import { DASH_LINE, defaultLogger as dlog } from './default-logger'
 

@@ -3,7 +3,7 @@
 import { expect } from 'chai'
 import { spy } from 'sinon'
 
-import chalk from 'chalk'
+import * as chalk from 'chalk'
 
 import { ENVS, LOGLEVELS } from '../'
 
@@ -119,7 +119,6 @@ describe('error', () => {
   })
 
   describe('op function', () => {
-
     let currentEnv: string | undefined
     let currentLoglevel: string | undefined
 
