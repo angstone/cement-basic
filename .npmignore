@@ -9,6 +9,7 @@ src
 types
 .gitignore
 .mocharc.json
+.npmrc
 .nvmrc
 .nycrc.json
 .prettierrc.json

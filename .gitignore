@@ -10,4 +10,5 @@ dist
 dockers/data
 # nyc dump
 .nyc_output
+.npmrc
 coverage
