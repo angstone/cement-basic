@@ -1,6 +1,6 @@
 {
   "name": "@angstone/cement-basic",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Environment constants, a logger and an error handler acting as TypeScript boilerplate",
   "main": "dist/index.js",
   "scripts": {
