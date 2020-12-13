@@ -20,7 +20,7 @@ tslint.json
 wallaby.js
 
 # ignore trash in my machine
-trash
+.trash
 # timestamp of last build
 .lastDistBuildDate
 .tscache
