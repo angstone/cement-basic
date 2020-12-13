@@ -1,0 +1,25 @@
+node_modules
+package-lock.json
+dist
+
+# ignore trash in my machine
+.trash
+
+types
+
+mocha-globals.js
+wallaby.js
+
+# timestamp of last build
+.lastDistBuildDate
+
+.tscache
+
+# database
+dockers/data
+
+# nyc dump
+.nyc_output
+
+.npmrc
+coverage

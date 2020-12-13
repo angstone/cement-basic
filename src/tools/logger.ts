@@ -1,39 +1,41 @@
-import { ILogger } from '../'
-import { defaultLogger } from './default-logger'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import { ILogger } from '../';
+import { defaultLogger } from './default-logger';
 
 interface ILoggerState {
-  logger: ILogger
+  logger: ILogger;
 }
 
 interface ILoggerModule extends ILogger {
-  useLogger: (logger: ILogger) => void
+  useLogger: (logger: ILogger) => void;
 }
 
 export const state: ILoggerState = {
-  logger: defaultLogger,
-}
+  logger: defaultLogger
+};
 
 /* tslint:disable:no-shadowed-variable */
 const useLogger = (logger: ILogger) => {
-  state.logger = logger
-}
+  state.logger = logger;
+};
 
 const fatal = (...args: any[]) => {
-  state.logger.fatal(...args)
-}
+  state.logger.fatal(...args);
+};
 const error = (...args: any[]) => {
-  state.logger.error(...args)
-}
+  state.logger.error(...args);
+};
 const note = (...args: any[]) => {
-  state.logger.note(...args)
-}
+  state.logger.note(...args);
+};
 const dev = (...args: any[]) => {
-  state.logger.dev(...args)
-}
+  state.logger.dev(...args);
+};
 
 const dash = () => {
-  state.logger.dash()
-}
+  state.logger.dash();
+};
 
 export const logger: ILoggerModule = {
   dash,
@@ -41,5 +43,5 @@ export const logger: ILoggerModule = {
   error,
   fatal,
   note,
-  useLogger,
-}
+  useLogger
+};

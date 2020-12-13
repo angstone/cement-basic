@@ -1,5 +1,5 @@
-import { IError } from './error.i'
-import { IHashMap } from './hash-map.i'
-import { ILogger } from './logger.i'
+import { IError } from './error.i';
+import { IHashMap } from './hash-map.i';
+import { ILogger } from './logger.i';
 
-export { IHashMap, ILogger, IError }
+export { IHashMap, ILogger, IError };

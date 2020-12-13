@@ -1,2 +1,2 @@
-import { signature } from './'
-signature()
+import { signature } from './';
+signature();

@@ -1,7 +1,8 @@
-import { env, logger } from './'
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import { env, logger } from './';
 
 export const signature = () => {
-  logger.dash()
+  logger.dash();
   logger.note(`
    APP_NAME: ${env.APP_NAME}
    APP_DESCRIPTION: ${env.APP_DESCRIPTION}
@@ -13,5 +14,5 @@ export const signature = () => {
    APP_LOGLEVEL: ${env.APP_LOGLEVEL}
 
    APP_LOADED_AT: ${env.APP_LOADED_AT}
-  `)
-}
+  `);
+};
